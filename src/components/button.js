@@ -2,9 +2,10 @@ import React from "react"
 
 import { COLORS, BORDER_RADIUS, GRADIENT } from "../styles/constants"
 import "../styles/button.css"
+import "../pages/app"
 
 const Button = ({ children }) => (
-  <button
+  <button onClick={clickButton}
     style={{
       padding: ".5rem 2.5rem",
       color: COLORS.lightWhite,
@@ -18,5 +19,10 @@ const Button = ({ children }) => (
     {children}
   </button>
 )
+
+const clickButton = (e) => {
+ e.preventDefault();
+ console.log('button working');
+}
 
 export default Button

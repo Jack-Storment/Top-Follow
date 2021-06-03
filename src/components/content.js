@@ -8,7 +8,7 @@ const Content = () => (
   <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
     <SectionHeader
       title="Minimal Features"
-      description="Don't spend time ripping out unneeded plugins and bloat."
+      description="TopFollow will allow Twitter users to curate collections of other Twitter users that they think are good follows according to niche categories they define."
     />
     <content
       style={{
@@ -19,10 +19,9 @@ const Content = () => (
       }}
     >
       <div>
-        <h3>What you need to Start</h3>
+        <h3>All of your interests in one place.</h3>
         <p style={{ color: COLORS.gray }}>
-          Includes plugins for analytics, building sitemaps, and optimizing
-          images
+          We make it easy to find what you're interested in. All of your favorite lists in one place with a community of people for each category. 
         </p>
       </div>
       <div>
