@@ -5,7 +5,6 @@ import Button from "../components/button"
 import headerImage from "../images/header.png"
 import MockupContent from "./image"
 import mockupFrame from "../images/mockup-frame.png"
-var Link = require('react-router').Link
 
 const Header = ({ siteTitle }) => (
   <div
@@ -29,22 +28,27 @@ const Header = ({ siteTitle }) => (
     />
     <h1 style={{ textAlign: "center" }}>TopFollow</h1>
     <p style={{ textAlign: "center", maxWidth: 440 }}>
-
+      Everything you care about. All in one place.
     </p>
     <Button>Get Early Access</Button>
-    {/* <Link to="../pages/app" className="Button">Redirect to app</Link> */}
     <div style={{ margin: 60, width: `250px`, position: "relative" }}>
       <div style={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
         <MockupContent />
       </div>
-    
+      <div
+        style={{
+          position: "absolute",
+          width: "250px",
+          top: 0,
+        }}
+      >
         <img
           src={mockupFrame}
           alt="outlines of shapes and confetti in the background "
         />
       </div>
     </div>
-
+  </div>
 )
 
 Header.propTypes = {

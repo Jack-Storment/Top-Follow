@@ -19,7 +19,7 @@ const Content = () => (
       }}
     >
       <div>
-        <h3>All of your interests in one place.</h3>
+        <h3>All of your interests in one place. With a community for each category.</h3>
         <p style={{ color: COLORS.gray }}>
           We make it easy to find what you're interested in. All of your favorite lists in one place with a community of people for each category. 
         </p>
