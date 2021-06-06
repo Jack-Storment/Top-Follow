@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 import Button from "../components/button"
 import headerImage from "../images/header.png"
@@ -31,6 +32,7 @@ const Header = ({ siteTitle }) => (
       Everything you care about. All in one place.
     </p>
     <Button>Get Early Access</Button>
+    <p><Link className="btn btn-primary" to="/ogapp/">Try it now for free</Link></p>
     <div style={{ margin: 60, width: `250px`, position: "relative" }}>
       <div style={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
         <MockupContent />
