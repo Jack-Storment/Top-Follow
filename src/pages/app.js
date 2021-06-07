@@ -1,13 +1,28 @@
 import React from 'react';
-import { Admin, Resource } from 'react-admin';
-import jsonServerProvider from 'ra-data-json-server';
 
-import { PostList } from './posts';
+const users = [
+    {
+        id: 1,
+        name: 'Robin Williams',
+        occupation: 'teacher',
+    },
+    {
+        id: 2,
+        name: 'John Doe',
+        occupation: 'gardener',
+    },
+];
 
-const App = () => (
-    <Admin dataProvider={jsonServerProvider('http://jsonplaceholder.typicode.com')}>
-        <Resource name="posts" list={PostList} />
-    </Admin>
+const WordList = () => (
+    <ul>
+        {users.map(user => (
+            <li key={user.id}>
+                <div>{user.id}</div>
+                <div>{user.name}</div>
+                <div>{user.occupation}</div>
+            </li>
+        ))}
+    </ul>
 );
 
-export default App;
+export default WordList;

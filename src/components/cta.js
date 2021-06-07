@@ -8,7 +8,7 @@ const CallToAction = () => (
   <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
     <SectionHeader
       title="Stay Updated"
-      description="Follow @TFollowio on Twitter for the latest updates!"
+      description="Follow @xqgl99 on Twitter for the latest updates!"
     />
     <Button>Get Early Access</Button>
   </div>
